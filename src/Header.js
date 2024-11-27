@@ -3,7 +3,7 @@ import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faInfoCircle, faCode, faFileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faInfoCircle, faCode, faFileAlt, faEnvelope, faShield } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 import './Header.css';
@@ -36,8 +36,11 @@ const Header = () => {
                             <span>Contact</span>
                             <FontAwesomeIcon icon={faEnvelope} className="ml-2 text-light ho" />
                         </Nav.Link>
+                        <Nav.Link as={Link} to="/certify">
+                            <span>Certificates</span>
+                            <FontAwesomeIcon icon={faShield} className="ml-2 text-light ho" />
+                        </Nav.Link>
                     </Nav>
-                    <Nav>
                         <Nav.Link href="https://github.com/upendar96">
                             <span className="sr-only">Github</span>
                             <FontAwesomeIcon icon={faGithub} size="lg" className="text-light ho" />
@@ -46,7 +49,7 @@ const Header = () => {
                             <span className="sr-only">Linkedin</span>
                             <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-light ho" />
                         </Nav.Link>
-                    </Nav>
+                    
                 </Navbar.Collapse>
             </Container>
         </Navbar>

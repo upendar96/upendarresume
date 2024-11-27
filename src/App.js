@@ -8,6 +8,7 @@ import Resume from './Resume';
 import Contact from './Contact'; 
 import Footer from './Footer'; 
 import Skills from './Skills'; 
+import Certificates from './Certificates';
 
 function App() { 
 return ( 
@@ -20,6 +21,7 @@ return (
         <Route path="/skills" element={<Skills />} /> 
         <Route path="/resume" element={<Resume />} /> 
         <Route path="/contact" element={<Contact />} /> 
+        <Route path="/certify" element={<Certificates />} /> 
         </Routes> 
         <Footer /> 
     </div> 

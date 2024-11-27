@@ -27,7 +27,7 @@ body {
 .section-description {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: #ffffff;
+    color: #ffeded;
 }
 
 .card {
@@ -119,6 +119,7 @@ body {
 .card {
     border: none;
     transition: transform 0.3s;
+    color: #10012e;
 }
 
 .card:hover {
@@ -126,15 +127,24 @@ body {
 }
 
 .card-title {
-    font-size: 1.5rem;
-    color: #fffcfc;
+ 
+    font-size: 2.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #f4f4f5;
 }
 
 .card-text {
     font-size: 1.2rem;
-    color: #fff5f5;
+    color: #ede5e5;
 }
-
+.card-body{
+    background-color: #10012e;
+    color: #ffeded;
+}
+.cert1{
+    height: 300px;
+    width: 500px;
+}
 
 /* Resume Section Styles */
 #resume {
